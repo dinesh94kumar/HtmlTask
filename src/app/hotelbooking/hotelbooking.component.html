@@ -1,0 +1,170 @@
+<section>
+  <div class="container-fluid ">
+   <div class="row mt-2 ">
+     <div class="col-10 offset-1">
+       <h6>Find deals on Hotels</h6>
+     </div>
+   </div>
+
+             
+
+                  <div class="row m-1 mb-2"  >
+                   
+                      <div class="col-12 col-sm-9 offset-sm-1">
+                        <div class="row" style="box-shadow: 0px 1px 6px 1px #00000033;">
+                          <div class="col-12 col-md-6" style="border-right: 0.2px solid #c7c7c7;">
+                            <div class="row">
+                              <div class="col-3 col-md-3 d-none d-sm-block pl-0 pr-0" style="background-color: #52B1EF;"><span class=" d-none d-md-block"  ><i class="fas fa-hotel fa-2x pt-3 pl-4" style="color: white;"></i></span></div>
+                              <div class="col-12 col-md-9 p-0 pl-2">
+                                <span class="m-0 " style="font-size: 10px; ">From</span><br>
+                                                        <input class="form-control p-0 " [formControl]="place" list="datalistOptions" placeholder="search place" id="exampleDataList" style="border: none!important;" [ngClass]="{ 'is-invalid': submitted &&place.errors }">
+                                                      <datalist id="datalistOptions">
+                                                        <option value="San Francisco"> 
+                                                        <option value="New York">
+                                                        <option value="Seattle">
+                                                        <option value="Los Angeles">
+                                                        <option value="Chicago">
+                                                      </datalist>
+                                                      <div *ngIf="submitted && place.errors" class="invalid-feedback">
+                                                        <div *ngIf="place.errors.required">place required </div>
+                                                      </div>
+                              </div>
+                            </div>            
+                            </div>
+                                       
+                                               
+                                                <div class="col-md-3 col-12 date p-0  " style="border-right: 0.2px solid #c7c7c7;">
+                                                  <span class="m-0 " style="font-size: 10px;">Check-In</span><br>
+                                                  <input type="date" [formControl]="checkin" style="border:none ;overflow: hidden; font-size: 10px; width: 100%; font-weight: bold;" [ngClass]="{ 'is-invalid': submitted &&checkin.errors }"> 
+                                                  <div *ngIf="submitted && checkin.errors" class="invalid-feedback">
+                                                    <div *ngIf="checkin.errors.required">select date </div>
+                                                  </div> 
+       
+                                                  
+                                                  <!-- <i class="far fa-calendar-alt pl-1" style="color: #BDBDBD;"></i> -->
+                                                </div>
+                                                <div class="col-md-3 col-12 p-0 ">
+                                                  <span class="m-0 " style="font-size: 10px;">Check-Out</span><br>
+                                                  <input type="date" [formControl]="checkout" style="border:none ;overflow: hidden; font-size: 10px; width: 100%; font-weight: bold;" [ngClass]="{ 'is-invalid': submitted &&checkout.errors }"> 
+                                                  <div *ngIf="submitted && checkout.errors" class="invalid-feedback">
+                                                    <div *ngIf="checkout.errors.required">select date </div>
+                                                  </div> 
+                                                </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-2 p-0 text-center" style="background-color: #52B1EF;height: auto; font-size: 15px!important;" >
+                       
+                          <button type="button" (click)="findHotels()" class="btn search-btn text-white pt-3 " style="border: none!important; background-color: #52B1EF;height: auto; font-size: 18px!important;" >Search Again</button>
+                        
+                      </div>
+                    
+                      
+
+                    
+                  </div>
+                </div>
+    </section>
+    <section id="Blog" *ngIf="viewHotels">
+      
+     
+      <div class="container-fluid ">
+          <div class="row M-0">
+              <!-- col-4 -->
+              <div class="col-12 col-sm-3 offset-sm-1 p-0 text-center">
+                  <div class="row p-0 ml-5">
+                          <div class="card w-100 text-center"  >
+                                  <img class="card-img-top" src="./assets/resorts.jpeg" alt="Card image">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Hotels</h5>
+                                    <p class="card-text">10,775 hotels.</p>
+                                  </div>
+                                  
+                              </div>
+                                
+                      
+                  </div>
+                 
+              </div>
+              <!-- col-4 end -->
+              <!-- col-4 -->
+              <div class="col-12 col-sm-3 p-0 pl-3"> 
+                   <div class="row p-0 ml-5">
+                          <div class="card w-100 text-center" >
+                                  <img class="card-img-top"  src="./assets/resorts.jpeg" alt="Card image">
+                                  <div class="card-body ">
+                                    <h6 class="card-title ">Resorts</h6>
+                                    <p class="card-text">5,000+ resorts</p>
+                                  </div>
+                                  
+                                </div>
+                  </div>  
+              </div>
+               <!-- col-4 end -->
+              <!-- col-4 -->
+              <div class="col-12 col-sm-3 ml-5 p-0">
+                      
+                              <div class="card w-100 text-center">
+                                      <img class="card-img-top" src="./assets/resorts.jpeg" alt="Card image">
+                                      <div class="card-body">
+                                        <h6 class="card-title ">Villa's </h6>
+                                        <p class="card-text">20,000 villas</p>
+                                      </div>
+                                      
+                                    </div>
+                     
+                          </div>
+                         
+              </div>
+              <div class="row m-0 mt-3">
+                <!-- col-4 -->
+                <div class="col-12 col-sm-3 offset-sm-1 p-0 text-center ">
+                    <div class="row p-0 ml-5">
+                            <div class="card w-100 text-center"  >
+                                    <img class="card-img-top" src="./assets/appartment.jpg" alt="Card image">
+                                    <div class="card-body ">
+                                      <h6 class="card-title">Appartments</h6>
+                                      <p class="card-text">50,000apartments</p>
+                                    </div>
+                                    
+                                </div>
+                                  
+                        
+                    </div>
+                   
+                </div>
+                <!-- col-4 end -->
+                <!-- col-4 -->
+                <div class="col-12 col-sm-3 p-0 pl-3"> 
+                     <div class="row p-0 ml-5">
+                            <div class="card w-100 text-center" >
+                                    <img class="card-img-top" src="./assets/appartment.jpg" alt="Card image">
+                                    <div class="card-body ">
+                                      <h6 class="card-title ">Bounquite Hall </h6>
+                                      <p class="card-text">2,000 halls</p> 
+                                    </div>
+                                    
+                                  </div>
+                    </div>  
+                </div>
+                 <!-- col-4 end -->
+                <!-- col-4 -->
+                <div class="col-12 col-sm-3 ml-5 p-0">
+                        
+                                <div class="card w-100 text-center" >
+                                        <img class="card-img-top" src="./assets/appartment.jpg" alt="Card image">
+                                        <div class="card-body ">
+                                          <h6 class="card-title ">Houses</h6>
+                                          <p class="card-text">50,000 houses</p>
+                                        </div>
+                                       
+                                      </div>
+                       
+                            </div>
+                           
+                </div>
+              <!-- col-4 end -->
+          </div>
+          <!-- row end -->
+     
+      <!-- container-G end -->
+  </section>
