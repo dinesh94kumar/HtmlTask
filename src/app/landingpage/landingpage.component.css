@@ -33,11 +33,50 @@
     background-color: black !important;
 color: white !important;
 text-align: center!important;
-position: fixed;
+/* position: fixed; */
   left: 0;
   bottom: 0;
   width: 100%;
 
+}
+
+.aboutUs{
+    text-align: center!important;
+ 
+}
+
+.p{
+    text-align: center;
+}
+.numberStyle{
+    font-size:36px;
+    color: #ffc32e;
+}
+
+.pricing{
+    background: #f6f7fe;
+    padding: 0px 1px 1px 1px;
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    overflow: hidden;
+    margin: 35px auto 35px;
+    max-width: 600px;
+    border-color: black !important;
+    border-width: 1px !important;
+}
+
+.box{
+    border-color: #f0f0f0;
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px;
+    max-width: 600px;
+    margin: 35px auto 35px;
+}
+
+.mediaList{
+    padding: 15px;
 }
 
 
