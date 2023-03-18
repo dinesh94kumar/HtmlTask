@@ -81,7 +81,7 @@ text-align: center!important;
 
 }
 
-.aboutUs{
+.container{
     text-align: center!important;
     max-width: 980px;
     margin: auto; 
@@ -108,8 +108,6 @@ text-align: center!important;
 .numberStyle{
     font-size:36px;
     color: #ffc32e;
-    font-size: 36px;  
-
 }
 
 .pricing{
