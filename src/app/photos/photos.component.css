@@ -44,6 +44,10 @@
     margin-bottom: 10px;
 }
 
+.img{
+    border: 2px solid transparent
+}
+
 .pricingbox{
     border-style: groove;
     border-color: black;
@@ -81,7 +85,7 @@ text-align: center!important;
 
 }
 
-.aboutUs{
+.photos{
     text-align: center!important;
     max-width: 980px;
     margin: auto; 

@@ -8,13 +8,23 @@ import { FlightbookingComponent } from './flightbooking/flightbooking.component'
 import { HotelbookingComponent } from './hotelbooking/hotelbooking.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BannerComponent } from './banner/banner.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { PhotosComponent } from './photos/photos.component';
+import { ReviewsComponent } from './reviews/reviews.component';
+import { ServiceareaComponent } from './servicearea/servicearea.component';
 @NgModule({
   declarations: [
     AppComponent,
     LandingpageComponent,
     FlightbookingComponent,
     HotelbookingComponent,
-    BannerComponent
+    BannerComponent,
+    HomeComponent,
+    AboutComponent,
+    PhotosComponent,
+    ReviewsComponent,
+    ServiceareaComponent
   ],
   imports: [
     BrowserModule,
