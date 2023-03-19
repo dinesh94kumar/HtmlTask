@@ -15,6 +15,7 @@ import { ReviewsComponent } from './reviews/reviews.component';
 import { ServiceareaComponent } from './servicearea/servicearea.component';
 import { PricingSocialmediaComponent } from './pricing-socialmedia/pricing-socialmedia.component';
 import { ServicedetailsComponent } from './servicedetails/servicedetails.component';
+import { ServicedropdetailsComponent } from './servicedropdetails/servicedropdetails.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { ServicedetailsComponent } from './servicedetails/servicedetails.compone
     ReviewsComponent,
     ServiceareaComponent,
     PricingSocialmediaComponent,
-    ServicedetailsComponent
+    ServicedetailsComponent,
+    ServicedropdetailsComponent
   ],
   imports: [
     BrowserModule,

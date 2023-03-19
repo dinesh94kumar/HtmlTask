@@ -10,6 +10,7 @@ import { ReviewsComponent } from './reviews/reviews.component';
 import { ServiceareaComponent } from './servicearea/servicearea.component';
 import { AboutComponent } from './about/about.component';
 import { ServicedetailsComponent } from './servicedetails/servicedetails.component';
+import { ServicedropdetailsComponent } from './servicedropdetails/servicedropdetails.component';
 
 const routes: Routes = [
   {path:'',
@@ -32,7 +33,9 @@ component:ServiceareaComponent},
 {path:'about',
 component:AboutComponent},
 {path:'servicedetails/:servicename',
-component:ServicedetailsComponent}
+component:ServicedetailsComponent},
+{path:'servicedropdetails/:servicedropname',
+component:ServicedropdetailsComponent}
 ]}  
 ];
 

@@ -1,0 +1,93 @@
+<div class="container">
+  <p>&nbsp;</p>
+  <h1>{{servicedropName}}</h1><br> <br>
+
+
+  <!-- Remodeling Contractor start -->
+  <div *ngIf="servicedropName == 'Remodeling Contractor'">
+    <h3>General Contractor Services</h3>
+    <p>&nbsp;</p>
+    <img src="../../assets/remodeling contractor_900x600.jpg" width="900px;" height="600px;" alt="">
+    <p>&nbsp;</p>
+    <p>Bayside Home Improvement Inc has been remodeling area homes since 2011 and has built a solid reputation,
+      one satisfied customer, at a time. We're well versed in working with local building codes and approach each
+      and every remodeling project with the professionalism and fairness that you deserve and expect.</p>
+    <p>&nbsp;</p>
+    <hr>
+    <h3><strong>Call for a FREE Quote</strong></h3>
+    <p><span class="numberStyle">
+        <strong>(209) 596-3789</strong>
+      </span></p>
+    <hr>
+    <p>&nbsp;</p>
+    <div class="col-12 row">
+      <div class="col-8 " style="text-align: left !important;">
+        <h3>Comprehensive Remodeling Services</h3><br>
+        <p>From bathroom tiles to framing a new porch, Bayside Home Improvement Inc has the expertise to tackle any home
+          remodeling project you have in mind. What's more, we'll work with you every step of the way, from developing
+          the
+          design to choosing colors and styles of each product, to the final coat of paint. Rest assured, our crews are
+          skilled
+          in quality craftsmanship and have a keen eye for details. You're in good hands with Bayside Home Improvement
+          Inc.</p>
+        <p>&nbsp;</p>
+        <h3>Our Remodeling Services</h3>
+        <p>You can trust that the remodeling professionals who come into your home are carefully screened and expertly
+          trained to provide consistently reliable, expert workmanship. Types of home enhancement projects provided</p>
+        <p>&nbsp;</p>
+        <ul>
+          <li>Kitchen Remodeling</li>
+          <li>Bathroom Remodeling</li>
+          <li>Home Additions</li>
+          <li>Custom Cabinets</li>
+          <li>Siding</li>
+          <li>Back Yard Enhancements</li>
+          <li>Basement Finishing</li>
+          <li>And More – Just ask!</li>
+        </ul>
+      </div>
+      <div class="col-4">
+        <img src="../../assets/ghjgh_w600_350x440.jpg" style=" height: 440px; width: 350px;" alt="">
+      </div>
+    </div>
+    <p>&nbsp;</p>
+    <h3 style="text-align: left !important;">Why Call Bayside Home Improvement Inc for Your Remodeling?</h3>
+    <p></p>
+    <p style="text-align: left !important;"> Upon the development of your home remodeling project plans, you will
+      receive a detailed breakdown of the projected cost. Of course, we'll be happy to work with plans you may already
+      have as well. You will be empowered to evaluate all aspects of the quote and ensure that you understand and
+      approve of
+      where each dollar is going. We can work with you to locate cost savings in materials and labor along the way so
+      that you
+      receive the best value possible for your home improvement project. Fair pricing is the standard at Bayside Home
+      Improvement Inc.
+    </p>
+  </div>
+  <!-- Remodeling Contractor end -->
+
+
+  <p>&nbsp;</p>
+  <hr>
+  <h3><strong>Call for a FREE Quote</strong></h3>
+  <p><span class="numberStyle">
+      <strong>(209) 596-3789</strong>
+    </span></p>
+  <hr>
+  <p>&nbsp;</p>
+  <p>
+    <a class="serviceList" href="">"A-" rating with Better Business Bureau!</a><br><br>
+    <a href=""><img src="../../assets/cbbb-badge-horz@2x.png" width="149px;" height="56px;"
+        alt=""></a>&nbsp;&nbsp;&nbsp;
+    <a href=""><img src="../../assets/cbbb-accred-a-minus.png" width="57px;" height="57px;" alt=""></a>
+  </p>
+  <p>&nbsp;</p>
+  <app-pricing-socialmedia></app-pricing-socialmedia>
+  <p>&nbsp;</p>
+  <h3>Cities Served</h3>
+  <p></p>
+  <div class="col-12 row">
+    <div class="col-4" *ngFor="let obj of SerArry"><a class="serviceList" (click)="open(obj.name)">{{obj.name}}</a>
+    </div>
+  </div>
+  <p>&nbsp;</p>
+</div>

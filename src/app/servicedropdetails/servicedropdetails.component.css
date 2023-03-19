@@ -1,0 +1,26 @@
+.container{
+    text-align: center!important;
+    max-width: 980px;
+    margin: auto; 
+}
+
+.serviceList{
+    color: #ffc32e;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.col-4{
+    padding: 5px;
+}
+
+.numberStyle {
+    font-size: 36px;
+    color: #ffc32e;
+    font-size: 36px;
+}
+
+.contentX li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
