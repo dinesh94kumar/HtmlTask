@@ -14,6 +14,7 @@ import { PhotosComponent } from './photos/photos.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { ServiceareaComponent } from './servicearea/servicearea.component';
 import { PricingSocialmediaComponent } from './pricing-socialmedia/pricing-socialmedia.component';
+import { ServicedetailsComponent } from './servicedetails/servicedetails.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { PricingSocialmediaComponent } from './pricing-socialmedia/pricing-socia
     PhotosComponent,
     ReviewsComponent,
     ServiceareaComponent,
-    PricingSocialmediaComponent
+    PricingSocialmediaComponent,
+    ServicedetailsComponent
   ],
   imports: [
     BrowserModule,

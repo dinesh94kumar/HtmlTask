@@ -1,0 +1,19 @@
+.container{
+    text-align: center!important;
+    max-width: 980px;
+    margin: auto; 
+}
+
+.col-10{
+    padding-left: initial !important;
+    text-align: left;
+}
+
+.Headername{
+    color: orange;
+    font-weight: bold;
+}
+
+a:hover {
+    color: black;
+  }

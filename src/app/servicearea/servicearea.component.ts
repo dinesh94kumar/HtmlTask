@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-servicearea',
@@ -98,9 +99,12 @@ export class ServiceareaComponent implements OnInit {
     {name:'West Menlo Park, CA'},
     {name:'Woodside, CA'}
   ]
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+  open(open){
+    this.router.navigate(['servicedetails',open]);
   }
 
 }

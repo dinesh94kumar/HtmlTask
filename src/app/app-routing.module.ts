@@ -9,6 +9,7 @@ import { PhotosComponent } from './photos/photos.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { ServiceareaComponent } from './servicearea/servicearea.component';
 import { AboutComponent } from './about/about.component';
+import { ServicedetailsComponent } from './servicedetails/servicedetails.component';
 
 const routes: Routes = [
   {path:'',
@@ -29,7 +30,9 @@ component:ReviewsComponent},
 {path:'servicearea',
 component:ServiceareaComponent},
 {path:'about',
-component:AboutComponent}
+component:AboutComponent},
+{path:'servicedetails/:servicename',
+component:ServicedetailsComponent}
 ]}  
 ];
 
